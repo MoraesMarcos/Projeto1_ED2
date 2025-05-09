@@ -7,10 +7,9 @@ Uma estrutura que associa chaves a valores através de uma função de hash que 
 Transforma uma chave (como uma string ou número) em um índice de array. Usaremos a função embutida hash() do Python, aplicada com módulo (% tamanho) para garantir que o índice esteja dentro do tamanho do array.
 
 📌 **Colisões:**
-Quando duas chaves diferentes geram o mesmo índice. ]
+Quando duas chaves diferentes geram o mesmo índice. 
 
 📌 **Estratégias para tratar:**
-
 Encadeamento Separado (Separate Chaining): Cada posição do array aponta para uma lista com os pares chave-valor que colidiram nesse índice.
 
 📌 **Fator de Carga:**
