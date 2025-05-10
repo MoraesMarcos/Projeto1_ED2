@@ -1,17 +1,23 @@
-# Projeto1_ED2
+# 📦 HashTablePy
 
-📌 **Tabela Hash (Hash Table):**
-Uma estrutura que associa chaves a valores através de uma função de hash que transforma a chave em um índice. Ideal para operações rápidas de inserção, busca e remoção.
+A Tabela Hash é uma estrutura de dados que permite a associação eficiente entre chaves e valores, usando uma função de hash para mapear a chave a um índice dentro de um array. Essa estrutura é amplamente usada em dicionários, caches, indexadores de bancos de dados, etc.
 
-📌 **Função de Hash:**
-Transforma uma chave (como uma string ou número) em um índice de array. Usaremos a função embutida hash() do Python, aplicada com módulo (% tamanho) para garantir que o índice esteja dentro do tamanho do array.
+## 🔍 Descrição
 
-📌 **Colisões:**
-Quando duas chaves diferentes geram o mesmo índice. 
+Este projeto implementa uma estrutura de dados conhecida como **Tabela Hash** (ou **Mapa Hash**), permitindo inserir, buscar e remover pares chave-valor de forma eficiente.
 
-📌 **Estratégias para tratar:**
-Encadeamento Separado (Separate Chaining): Cada posição do array aponta para uma lista com os pares chave-valor que colidiram nesse índice.
+## 🧠 Conceitos Abordados
 
-📌 **Fator de Carga:**
-Define a razão entre o número de elementos e o tamanho do array. Um alto fator de carga aumenta colisões, exigindo possível redimensionamento.
+Função de Hash: converte uma chave (ex: string) em um número inteiro. Exemplo: hash(key) % tamanho.
 
+Array Base (buckets): armazena os valores com base nos índices gerados pela função de hash.
+
+Tratamento de Colisões: quando múltiplas chaves geram o mesmo índice, usa-se o Encadeamento Separado — uma lista em cada posição do array para armazenar múltiplos elementos.
+
+Operações Essenciais:
+
+put(chave, valor): insere um novo par ou atualiza um existente.
+
+get(chave): busca o valor associado à chave.
+
+delete(chave): remove um par chave-valor.
