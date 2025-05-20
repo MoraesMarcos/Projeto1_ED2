@@ -24,8 +24,7 @@ Operações Essenciais:
 
 ## 🧱 Diagrama de Classe
 
-
-      HashTable       
+HashTable       
 
 +----------------------+
 
