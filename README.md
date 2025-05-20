@@ -16,8 +16,39 @@ Tratamento de Colisões: quando múltiplas chaves geram o mesmo índice, usa-se 
 
 Operações Essenciais:
 
-put(chave, valor): insere um novo par ou atualiza um existente.
+- put(chave, valor): insere um novo par ou atualiza um existente.
 
-get(chave): busca o valor associado à chave.
+- get(chave): busca o valor associado à chave.
 
-delete(chave): remove um par chave-valor.
+- delete(chave): remove um par chave-valor.
+
+## 🧱 Diagrama de Classe
+
++----------------------+
+|     HashTable        |
++----------------------+
+| - buckets: list      |
+| - size: int          |
++----------------------+
+| + _hash(key): int    |
+| + put(key, value):   |
+| + get(key):          |
+| + delete(key):       |
+| + __str__(): str     |
++----------------------+
+
+## 📋 Plano de Tarefas
+
+| Tarefa                                 | Responsável    | Status          |
+| -------------------------------------- | -------------- | --------------- |
+| Estudar os conceitos de tabela hash    | Equipe         | ✅ Concluído    |
+| Criar repositório no GitHub            | Aluno - Marcos | ✅ Concluído    |
+| Estruturar o projeto (pasta, arquivos) | Aluno          | 🔄 Em andamento |
+| Implementar método `_hash()`           | Aluno - Marcos | 🔄 Em andamento |
+| Implementar `put(chave, valor)`        | Aluno          | 🔄 Em andamento |
+| Implementar `get(chave)`               | Aluno          | 🔄 Em andamento |
+| Implementar `delete(chave)`            | Aluno          | 🔄 Em andamento |
+| Escrever README.md                     | Aluno - Marcos | ✅ Concluído    |
+| Criar `main.py` com testes simples     | Aluno - Marcos | 🔄 Em andamento |
+| Documentar planejamento da semana 1    | Aluno - Marcos | 🔄 Em andamento |
+
