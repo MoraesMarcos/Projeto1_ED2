@@ -25,7 +25,7 @@ Operações Essenciais:
 ## 🧱 Diagrama de Classe
 
 +----------------------+
-|     HashTable        |
+|      HashTable       |
 +----------------------+
 | - buckets: list      |
 | - size: int          |
