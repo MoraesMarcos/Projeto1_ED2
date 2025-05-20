@@ -24,19 +24,19 @@ Operações Essenciais:
 
 ## 🧱 Diagrama de Classe
 
-HashTable       
+|     HashTable       
 
 +----------------------+
 
- - bucketes: list                         
- - size: int                              
+| - bucketes: list                         
+| - size: int                              
 +----------------------+
 
- + _hash(key): int                       
- + put(key, value):                       
- + get(key):                              
- + delete(key):                           
- + __str__(): str                        
+| + _hash(key): int                       
+| + put(key, value):                       
+| + get(key):                              
+| + delete(key):                           
+| + __str__(): str                        
 
 ## 📋 Plano de Tarefas
 
