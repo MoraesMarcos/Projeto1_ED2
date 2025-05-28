@@ -46,7 +46,7 @@ Operações Essenciais:
 | Criar repositório no GitHub            | Aluno - Marcos | ✅ Concluído    |
 | Estruturar o projeto (pasta, arquivos) | Aluno          | 🔄 Em andamento |
 | Implementar método `_hash()`           | Aluno - Marcos | 🔄 Em andamento |
-| Implementar `put(chave, valor)`        | Aluno          | 🔄 Em andamento |
+| Implementar `put(chave, valor)`        | Aluno - Douglas | 🔄 Em andamento |
 | Implementar `get(chave)`               | Aluno          | 🔄 Em andamento |
 | Implementar `delete(chave)`            | Aluno          | 🔄 Em andamento |
 | Escrever README.md                     | Aluno - Marcos | ✅ Concluído    |
