@@ -47,8 +47,8 @@ Operações Essenciais:
 | Estruturar o projeto (pasta, arquivos) | Aluno - Douglas | 🔄 Em andamento |
 | Implementar método `_hash()`           | Aluno - Marcos | 🔄 Em andamento |
 | Implementar `put(chave, valor)`        | Aluno - Douglas | 🔄 Em andamento |
-| Implementar `get(chave)`               | Aluno          | 🔄 Em andamento |
-| Implementar `delete(chave)`            | Aluno          | 🔄 Em andamento |
+| Implementar `get(chave)`               | Aluno - Gustavson | 🔄 Em andamento |
+| Implementar `delete(chave)`            | Aluno - Gustavson  | 🔄 Em andamento |
 | Escrever README.md                     | Aluno - Marcos | ✅ Concluído    |
 | Criar `main.py` com testes simples     | Aluno - Marcos | 🔄 Em andamento |
 | Documentar planejamento da semana 1    | Aluno - Marcos | 🔄 Em andamento |
