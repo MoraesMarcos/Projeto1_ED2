@@ -44,10 +44,10 @@ Operações Essenciais:
 | -------------------------------------- | -------------- | --------------- |
 | Estudar os conceitos de tabela hash    | Equipe         | ✅ Concluído    |
 | Criar repositório no GitHub            | Aluno - Marcos | ✅ Concluído    |
-| Estruturar o projeto (pasta, arquivos) | Aluno          | 🔄 Em andamento |
+| Estruturar o projeto (pasta, arquivos) | Aluno - Douglas | 🔄 Em andamento |
 | Implementar método `_hash()`           | Aluno - Marcos | 🔄 Em andamento |
 | Implementar `put(chave, valor)`        | Aluno - Douglas | 🔄 Em andamento |
-| Implementar `get(chave)`               | Aluno - Douglas | 🔄 Em andamento |
+| Implementar `get(chave)`               | Aluno          | 🔄 Em andamento |
 | Implementar `delete(chave)`            | Aluno          | 🔄 Em andamento |
 | Escrever README.md                     | Aluno - Marcos | ✅ Concluído    |
 | Criar `main.py` com testes simples     | Aluno - Marcos | 🔄 Em andamento |
