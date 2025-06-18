@@ -1,17 +1,17 @@
-📦 HashSimPy  
+### 📦 HashSimPy  
 Ferramenta de linha de comando (CLI) para verificação de similaridade textual entre documentos, utilizando a técnica de **MinHashing** e estruturas de dados eficientes em Python. Ideal para tarefas como detecção de plágio, agrupamento de textos semelhantes e identificação de duplicatas.
 
-🔍 Descrição  
+### 🔍 Descrição  
 Este projeto implementa um verificador de similaridade textual baseado em MinHash, permitindo comparar documentos de forma rápida e com menor custo computacional que o cálculo exato do índice de Jaccard.
 
-🧠 Conceitos Abordados  
+### 🧠 Conceitos Abordados  
 
 - **Pré-processamento de texto**: limpeza, padronização e remoção de ruído textual usando expressões regulares.
 - **Shingling**: divisão do texto em *k*-shingles, substrings de tamanho fixo.
 - **MinHashing**: algoritmo para geração de assinaturas compactas dos documentos usando múltiplas funções hash simuladas.
 - **Índice de Similaridade**: estimativa baseada em quantos hashes coincidem entre dois documentos.
 
-🔧 Operações Essenciais
+### 🔧 Operações Essenciais
 
 - `ler_arquivo(path)`: leitura do arquivo `.txt`.
 - `preprocessar(texto)`: limpa e prepara o texto.
@@ -19,7 +19,7 @@ Este projeto implementa um verificador de similaridade textual baseado em MinHas
 - `assinatura(shingles)`: gera a assinatura MinHash.
 - `comparar_assinaturas(sig1, sig2)`: retorna a similaridade estimada.
 
-🧱 Arquitetura de Módulos
+### 🧱 Arquitetura de Módulos
 
 | Módulo           | Função Principal                                  |
 |------------------|---------------------------------------------------|
@@ -30,7 +30,7 @@ Este projeto implementa um verificador de similaridade textual baseado em MinHas
 | `comparador.py`  | Compara assinaturas para estimar similaridade     |
 | `cli.py`         | Interface de linha de comando com argparse        |
 
-📋 Plano de Tarefas
+### 📋 Plano de Tarefas
 
 | Tarefa                                      | Responsável         | Status         |
 |--------------------------------------------|----------------------|----------------|
@@ -45,8 +45,3 @@ Este projeto implementa um verificador de similaridade textual baseado em MinHas
 | Testar com casos reais e ajustar CLI       | Aluno - Marcos       | 🔄 Em andamento |
 | Criar README completo                      | Aluno - Marcos       | ✅ Concluído   |
 | Criar slides da apresentação               | Aluno - Marcos       | 🔄 Em andamento |
-
-📎 Exemplo de uso
-
-```bash
-python cli.py doc1.txt doc2.txt --k 5 --n 100
