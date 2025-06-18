@@ -1,55 +1,52 @@
-# 📦 HashTablePy
+📦 HashSimPy  
+Ferramenta de linha de comando (CLI) para verificação de similaridade textual entre documentos, utilizando a técnica de **MinHashing** e estruturas de dados eficientes em Python. Ideal para tarefas como detecção de plágio, agrupamento de textos semelhantes e identificação de duplicatas.
 
-A Tabela Hash é uma estrutura de dados que permite a associação eficiente entre chaves e valores, usando uma função de hash para mapear a chave a um índice dentro de um array. Essa estrutura é amplamente usada em dicionários, caches, indexadores de bancos de dados, etc.
+🔍 Descrição  
+Este projeto implementa um verificador de similaridade textual baseado em MinHash, permitindo comparar documentos de forma rápida e com menor custo computacional que o cálculo exato do índice de Jaccard.
 
-## 🔍 Descrição
+🧠 Conceitos Abordados  
 
-Este projeto implementa uma estrutura de dados conhecida como **Tabela Hash** (ou **Mapa Hash**), permitindo inserir, buscar e remover pares chave-valor de forma eficiente.
+- **Pré-processamento de texto**: limpeza, padronização e remoção de ruído textual usando expressões regulares.
+- **Shingling**: divisão do texto em *k*-shingles, substrings de tamanho fixo.
+- **MinHashing**: algoritmo para geração de assinaturas compactas dos documentos usando múltiplas funções hash simuladas.
+- **Índice de Similaridade**: estimativa baseada em quantos hashes coincidem entre dois documentos.
 
-## 🧠 Conceitos Abordados
+🔧 Operações Essenciais
 
-Função de Hash: converte uma chave (ex: string) em um número inteiro. Exemplo: hash(key) % tamanho.
+- `ler_arquivo(path)`: leitura do arquivo `.txt`.
+- `preprocessar(texto)`: limpa e prepara o texto.
+- `gerar_shingles(texto, k)`: transforma o texto em conjunto de *shingles*.
+- `assinatura(shingles)`: gera a assinatura MinHash.
+- `comparar_assinaturas(sig1, sig2)`: retorna a similaridade estimada.
 
-Array Base (buckets): armazena os valores com base nos índices gerados pela função de hash.
+🧱 Arquitetura de Módulos
 
-Tratamento de Colisões: quando múltiplas chaves geram o mesmo índice, usa-se o Encadeamento Separado — uma lista em cada posição do array para armazenar múltiplos elementos.
+| Módulo           | Função Principal                                  |
+|------------------|---------------------------------------------------|
+| `leitura.py`     | Lê arquivos de texto                              |
+| `preprocessamento.py` | Limpa e padroniza o texto                     |
+| `shingling.py`   | Gera os *shingles* a partir do texto              |
+| `minhash.py`     | Cria assinaturas MinHash                          |
+| `comparador.py`  | Compara assinaturas para estimar similaridade     |
+| `cli.py`         | Interface de linha de comando com argparse        |
 
-Operações Essenciais:
+📋 Plano de Tarefas
 
-- put(chave, valor): insere um novo par ou atualiza um existente.
+| Tarefa                                      | Responsável         | Status         |
+|--------------------------------------------|----------------------|----------------|
+| Estudar os conceitos (Hash, Shingle, etc)  | Equipe               | ✅ Concluído   |
+| Criar repositório e estrutura de pastas    | Aluno - Marcos       | ✅ Concluído   |
+| Implementar leitura de arquivos            | Aluno - Marcos       | 🔄 Em andamento   |
+| Implementar pré-processamento              | Aluno - Marcos       | 🔄 Em andamento   |
+| Implementar geração de shingles            | Aluno - Marcos       | 🔄 Em andamento   |
+| Implementar MinHash                        | Aluno - Marcos       | 🔄 Em andamento   |
+| Implementar função de comparação           | Aluno - Marcos       | 🔄 Em andamento   |
+| Desenvolver interface CLI                  | Aluno - Marcos       | 🔄 Em andamento   |
+| Testar com casos reais e ajustar CLI       | Aluno - Marcos       | 🔄 Em andamento |
+| Criar README completo                      | Aluno - Marcos       | ✅ Concluído   |
+| Criar slides da apresentação               | Aluno - Marcos       | 🔄 Em andamento |
 
-- get(chave): busca o valor associado à chave.
+📎 Exemplo de uso
 
-- delete(chave): remove um par chave-valor.
-
-## 🧱 Diagrama de Classe
-
-|     HashTable       
-
-+----------------------+
-
-| - bucketes: list                         
-| - size: int                              
-+----------------------+
-
-| + _hash(key): int                       
-| + put(key, value):                       
-| + get(key):                              
-| + delete(key):                           
-| + __str__(): str                        
-
-## 📋 Plano de Tarefas
-
-| Tarefa                                 | Responsável    | Status          |
-| -------------------------------------- | -------------- | --------------- |
-| Estudar os conceitos de tabela hash    | Equipe         | ✅ Concluído    |
-| Criar repositório no GitHub            | Aluno - Marcos | ✅ Concluído    |
-| Estruturar o projeto (pasta, arquivos) | Aluno - Douglas | 🔄 Em andamento |
-| Implementar método `_hash()`           | Aluno - Marcos | 🔄 Em andamento |
-| Implementar `put(chave, valor)`        | Aluno - Douglas | 🔄 Em andamento |
-| Implementar `get(chave)`               | Aluno - Gustavson | 🔄 Em andamento |
-| Implementar `delete(chave)`            | Aluno - Gustavson  | 🔄 Em andamento |
-| Escrever README.md                     | Aluno - Marcos | ✅ Concluído    |
-| Criar `main.py` com testes simples     | Aluno - Marcos | 🔄 Em andamento |
-| Documentar planejamento da semana 1    | Aluno - Marcos | 🔄 Em andamento |
-
+```bash
+python cli.py doc1.txt doc2.txt --k 5 --n 100
