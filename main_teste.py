@@ -2,6 +2,7 @@ from hashsimpy.leitura import ler_arquivo
 from hashsimpy.preprocessamento import preprocessar
 from hashsimpy.shingling import gerar_shingles
 
+
 def main():
     caminho = "exemplo.txt"
     texto = ler_arquivo(caminho)
