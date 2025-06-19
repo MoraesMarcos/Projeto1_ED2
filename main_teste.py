@@ -14,7 +14,7 @@ def main():
 
         print("\n🧩 Shingles gerados:")
         for s in sorted(shingles):
-            print(f"- {s}")
+            print(f"- {s.strip()}")  # visualmente sem espaços laterais
 
         print(f"\n🔢 Total de shingles: {len(shingles)}")
 
