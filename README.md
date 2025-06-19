@@ -39,9 +39,9 @@ Este projeto implementa um verificador de similaridade textual baseado em MinHas
 | Implementar leitura de arquivos            | Aluno - Marcos        | ✅ Concluído   |
 | Implementar pré-processamento              | Aluno - Marcos       | ✅ Concluído   |
 | Implementar geração de shingles            | Aluno - Marcos       | ✅ Concluído   |
-| Implementar MinHash                        | Aluno - [Douglas](https://github.com/douglasteyh)       | 🔄 Em andamento   |
-| Implementar função de comparação           | Aluno - [Douglas](https://github.com/douglasteyh)       | 🔄 Em andamento   |
-| Desenvolver interface CLI                  | Aluno - [Douglas](https://github.com/douglasteyh)       | 🔄 Em andamento   |
+| Implementar MinHash                        | Aluno - [Douglas](https://github.com/douglasteyh)       | ✅ Concluído   |
+| Implementar função de comparação           | Aluno - [Douglas](https://github.com/douglasteyh)       | ✅ Concluído   |
+| Desenvolver interface CLI                  | Aluno - [Douglas](https://github.com/douglasteyh)       | ✅ Concluído   |
 | Testar com casos reais e ajustar CLI       | Aluno - Nome       | 🔄 Em andamento |
 | Criar README completo                      | Aluno - Marcos       | ✅ Concluído   |
 | Criar slides da apresentação               | Aluno - Marcos       | 🔄 Em andamento |
