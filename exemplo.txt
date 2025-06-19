@@ -1,0 +1,1 @@
+Hashing é uma técnica eficiente para comparar textos em Python.
