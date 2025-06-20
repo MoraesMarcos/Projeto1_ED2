@@ -42,6 +42,6 @@ Este projeto implementa um verificador de similaridade textual baseado em MinHas
 | Implementar MinHash                        | Aluno - [Douglas](https://github.com/douglasteyh)       | ✅ Concluído   |
 | Implementar função de comparação           | Aluno - [Douglas](https://github.com/douglasteyh)       | ✅ Concluído   |
 | Desenvolver interface CLI                  | Aluno - [Douglas](https://github.com/douglasteyh)       | ✅ Concluído   |
-| Testar com casos reais e ajustar CLI       | Aluno - Gustavson       | 🔄 Em andamento |
+| Testar com casos reais e ajustar CLI       | Aluno - [Gustavson](https://github.com/gustavsonbarros) | ✅ Concluído   | 
 | Criar README completo                      | Aluno - [Marcos](https://github.com/MoraesMarcos)       | ✅ Concluído   |
 | Criar slides da apresentação               | Aluno - [Marcos](https://github.com/MoraesMarcos)       | 🔄 Em andamento |
